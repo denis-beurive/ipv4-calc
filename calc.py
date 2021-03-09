@@ -54,7 +54,8 @@ net_part = ip_num & net_mask
 host_part = ip_num & host_mask
 
 print(f"ip={ip:s} len={net_len:d}\n")
-print(f'network mask: 0x{net_mask:08X} ({int2ip_bin(net_mask):s})')
+print(f'network mask: 0x{net_mask:08X} ({int2ip_bin(net_mask):s}) '
+      f'{int2ip(net_mask):s}')
 print(f'host mask:    0x{host_mask:08X} ({int2ip_bin(host_mask):s})')
 print(f'network part: 0x{net_part:08X} ({int2ip(net_part):s})')
 print(f'IP count:     {host_mask+1:d}')
